@@ -1,3 +1,6 @@
+# baseline_comparison_experiments.py
+# This script conducts comparative baseline experiments to evaluate the proposed value-aware distillation method against two standard policy extraction baselines: pure Behavioral Cloning (BC) and VIPER (Verifiable Policy Extraction via Iterative Refinement). It calculates the Dual-Fidelity metrics across all methods, generates comprehensive comparative tables and multi-method plots, and produces the Information Capacity phase transition plot to empirically validate the theoretical rate-distortion bounds.
+
 import warnings
 warnings.filterwarnings('ignore')
 

@@ -1,3 +1,6 @@
+# information_bottleneck_distillation.py
+# This script implements the core Value-Aware Information Bottleneck distillation framework. It trains a PPO expert Oracle on the LunarLander-v3 environment, extracts a dataset containing states, actions, and continuous value estimates (V(s)), and distills this into capacity-constrained decision trees (CART). It computes the Dual-Fidelity metrics (Behavioral Fidelity F_b and Structural Fidelity F_s), evaluates the Performance-Transparency Gap (PTG) with bootstrap confidence intervals, and generates the Pareto frontier and feature importance visualizations.
+
 import warnings
 warnings.filterwarnings('ignore')
 
