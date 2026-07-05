@@ -45,7 +45,7 @@ def collect_expert_rollouts(env_id="HalfCheetah-v4", num_steps=50000):
     Saves the output directly to Google Drive.
     """
     # 1. Ensure save directory exists in your Google Drive
-    save_dir = '/content/drive/My Drive/XRL_Experiments/MuJoCo'
+    save_dir = '/content/drive/My Drive/paper/XRL_Experiments/MuJoCo'
     os.makedirs(save_dir, exist_ok=True)
     dataset_file = os.path.join(save_dir, 'halfcheetah_expert_dataset.npz')
 

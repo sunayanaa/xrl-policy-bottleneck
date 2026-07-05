@@ -32,7 +32,7 @@ class BlackjackWrapper(gym.ObservationWrapper):
 
 def evaluate_discrete_tree(max_depth=7, num_episodes=100000):
     # 1. Setup paths
-    drive_path = '/content/drive/My Drive/XRL_Experiments/Blackjack'
+    drive_path = '/content/drive/My Drive/paper/XRL_Experiments/Blackjack'
     model_file = os.path.join(drive_path, f'blackjack_tree_depth_{max_depth}.joblib')
 
     print("--- Starting Empirical Evaluation (Blackjack) ---")

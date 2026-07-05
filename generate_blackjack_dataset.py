@@ -38,7 +38,7 @@ class BlackjackWrapper(gym.ObservationWrapper):
 
 def train_and_collect_blackjack(num_train_steps=100000, num_collect_steps=50000):
     # 1. Setup Save Directories
-    save_dir = '/content/drive/My Drive/XRL_Experiments/Blackjack'
+    save_dir = '/content/drive/My Drive/paper/XRL_Experiments/Blackjack'
     os.makedirs(save_dir, exist_ok=True)
     dataset_file = os.path.join(save_dir, 'blackjack_expert_dataset.npz')
     model_file = os.path.join(save_dir, 'ppo_blackjack_expert.zip')
@@ -50,7 +50,7 @@ def train_and_collect_blackjack(num_train_steps=100000, num_collect_steps=50000)
 
     # Train the model
     model = PPO("MlpPolicy", env, verbose=0, learning_rate=1e-3)
-    print(f"Training PPO for {num_train_steps} timesteps (this takes ~30 seconds)...")
+    print(f"Training PPO for {num_train_steps} timesteps (this takes ~2 mins)...")
     model.learn(total_timesteps=num_train_steps)
     model.save(model_file)
     print(f"Expert model trained and saved to {model_file}")

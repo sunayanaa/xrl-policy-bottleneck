@@ -26,7 +26,7 @@ drive.mount('/content/drive')
 
 def distill_discrete_tree(max_depth=7, value_weight=1.0):
     # 1. Setup paths
-    drive_path = '/content/drive/My Drive/XRL_Experiments/Blackjack'
+    drive_path = '/content/drive/My Drive/paper/XRL_Experiments/Blackjack'
     dataset_file = os.path.join(drive_path, 'blackjack_expert_dataset.npz')
     model_save_file = os.path.join(drive_path, f'blackjack_tree_depth_{max_depth}.joblib')
 

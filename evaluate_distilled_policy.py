@@ -28,7 +28,7 @@ def evaluate_tree(env_id="HalfCheetah-v4", max_depth=14, num_episodes=10):
     Loads the distilled tree and evaluates its performance in the environment.
     """
     # 1. Setup paths
-    drive_path = '/content/drive/My Drive/XRL_Experiments/MuJoCo'
+    drive_path = '/content/drive/My Drive/paper/XRL_Experiments/MuJoCo'
     model_file = os.path.join(drive_path, f'distilled_tree_depth_{max_depth}.joblib')
 
     print(f"--- Starting Empirical Evaluation for {env_id} ---")

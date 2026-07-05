@@ -34,7 +34,7 @@ def train_distilled_tree(max_depth=14, value_weight=1.0):
     Loads expert data, trains a value-aware decision tree, and calculates fidelity.
     """
     # 1. Setup paths
-    drive_path = '/content/drive/My Drive/XRL_Experiments/MuJoCo'
+    drive_path = '/content/drive/My Drive/paper/XRL_Experiments/MuJoCo'
     dataset_file = os.path.join(drive_path, 'halfcheetah_expert_dataset.npz')
     model_save_file = os.path.join(drive_path, f'distilled_tree_depth_{max_depth}.joblib')
 
